@@ -53,11 +53,10 @@ if UserInputService.TouchEnabled then
     local TripButton = Instance.new("TextButton")
     TripButton.Name = "TripButton"
     TripButton.Size = UDim2.new(0, 60, 0, 60)
-    -- The position is adjusted to 0.78 on the X-axis to move it slightly to the right.
     TripButton.Position = UDim2.new(0.78, 0, 0.7, 0)
     TripButton.BackgroundColor3 = Color3.fromRGB(128, 128, 128)
     TripButton.BackgroundTransparency = 0.3
-    TripButton.Text = "🚀"
+    TripButton.Text = "V" -- Changed from 🚀 to V
     TripButton.TextSize = 28
     TripButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     TripButton.Parent = ScreenGui
