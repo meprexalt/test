@@ -10,7 +10,7 @@ local Player = Players.LocalPlayer
 -------------------------------------------------
 StarterGui:SetCore("SendNotification", {
     Title = "Trip Action Instructions",
-    Text = "Press C on PC or tap the button on mobile to trip!",
+    Text = "Press V on PC or tap the button on mobile to trip!",
     Duration = 5
 })
 
@@ -28,11 +28,11 @@ local function trip()
 end
 
 -------------------------------------------------
--- PC Users: Bind the C key to trigger the trip.
+-- PC Users: Bind the V key to trigger the trip.
 -------------------------------------------------
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
-    if input.KeyCode == Enum.KeyCode.C then
+    if input.KeyCode == Enum.KeyCode.V then
         trip()
     end
 end)
